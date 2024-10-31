@@ -633,7 +633,8 @@
             <!-- project 3 -->
 
             <a
-               href="https://food-del-frontend-zuji.onrender.com"
+               href="#"
+               onclick="openTwoWebsites(event)"
                target="_blank"
                rel="noopener noreferrer"
                class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-current rounded-lg relative cursor-pointer group"
@@ -945,6 +946,17 @@
             loop: true,
             smartBackspace: true, // this will only backspace what doesn't match the previous string
          });
+      </script>
+
+      <script>
+         function openTwoWebsites(event) {
+            event.preventDefault();
+            window.open(
+               "https://food-del-frontend-zuji.onrender.com",
+               "_blank"
+            );
+            window.open("https://food-del-backend-saqf.onrender.com", "_blank");
+         }
       </script>
 
       <script src="./script.js"></script>
