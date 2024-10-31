@@ -51,16 +51,19 @@
       <nav
          class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
       >
-         <img
-            class="w-28 cursor-pointer mr-14 dark:hidden"
-            src="./images/logo(juman).png"
-            alt=""
-         />
-         <img
-            class="w-28 cursor-pointer mr-14 hidden dark:block"
-            src="./images/logo_dark(juman).png"
-            alt=""
-         />
+         <a href="#top">
+            <img
+               class="w-28 cursor-pointer mr-14 dark:hidden"
+               src="./images/logo(juman).png"
+               alt="Logo"
+            />
+
+            <img
+               class="w-28 cursor-pointer mr-14 hidden dark:block"
+               src="./images/logo_dark(juman).png"
+               alt="Logo Dark"
+            />
+         </a>
          <ul
             class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent"
          >
@@ -201,16 +204,24 @@
             /></a>
             <a
                href="mailto:jumansaikia10@gmail.com"
-               class="hover:-translate-y-1 duration-500"
+               class="relative group z-10 hover:-translate-y-1 duration-500"
                ><img
                   class="w-6 dark:hidden"
                   src="./images/mail-top.png"
-                  alt="" />
+                  alt=""
+               />
                <img
                   class="w-6 hidden dark:block"
                   src="./images/mail-top-dark.png"
                   alt=""
-            /></a>
+               />
+               <!-- Tooltip with Phone Number in Column Layout -->
+               <span
+                  class="absolute left-8 top-1/2 -translate-y-1/2 hidden group-hover:flex flex-col items-center bg-gray-800 text-white text-sm py-1 px-2 rounded-md shadow-lg"
+               >
+                  jumansaikia10@gmail.com
+               </span>
+            </a>
             <a
                href="tel:+918011477787"
                class="relative group hover:-translate-y-1 duration-500"
@@ -459,7 +470,7 @@
                </ul>
 
                <a class="flex items-center gap-2 text-sm mt-5"
-                  >Read more
+                  >More tools
                   <img class="w-4" src="./images/right-arrow.png" alt=""
                /></a>
             </div>
@@ -507,7 +518,7 @@
                </ul>
 
                <a class="flex items-center gap-2 text-sm mt-5"
-                  >Read more
+                  >More tools
                   <img class="w-4" src="./images/right-arrow.png" alt=""
                /></a>
             </div>
@@ -554,7 +565,7 @@
                </ul>
 
                <a class="flex items-center gap-2 text-sm mt-5"
-                  >Read more
+                  >More tools
                   <img class="w-4" src="./images/right-arrow.png" alt=""
                /></a>
             </div>
@@ -574,6 +585,52 @@
 
          <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
             <!-- project 1 -->
+
+            <a
+               href="https://prescripto-frontend-theta.vercel.app"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="aspect-square bg-[url('./images/work-6.png')] bg-no-repeat bg-cover bg-current rounded-lg relative cursor-pointer group"
+            >
+               <div
+                  class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
+               >
+                  <div>
+                     <h2 class="font-semibold">Doctor Appointment</h2>
+                     <p class="font-sm text-gray-700">Mern FullStack</p>
+                  </div>
+                  <div
+                     class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+                  >
+                     <img class="w-5" src="./images/send-icon.png" alt="" />
+                  </div>
+               </div>
+            </a>
+
+            <!-- project 2 -->
+
+            <a
+               href="https://forever-frontend-one.vercel.app"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="aspect-square bg-[url('./images/work-7.png')] bg-no-repeat bg-cover bg-current rounded-lg relative cursor-pointer group"
+            >
+               <div
+                  class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
+               >
+                  <div>
+                     <h2 class="font-semibold">Shooping Website</h2>
+                     <p class="font-sm text-gray-700">Mern FullStack</p>
+                  </div>
+                  <div
+                     class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+                  >
+                     <img class="w-5" src="./images/send-icon.png" alt="" />
+                  </div>
+               </div>
+            </a>
+
+            <!-- project 3 -->
 
             <a
                href="https://food-del-frontend-zuji.onrender.com"
@@ -598,20 +655,20 @@
                </div>
             </a>
 
-            <!-- project 2 -->
+            <!-- project 4 -->
 
             <a
-               href="https://crypto-universe-six.vercel.app"
+               href="https://buletin-frontend.vercel.app"
                target="_blank"
                rel="noopener noreferrer"
-               class="aspect-square bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-current rounded-lg relative cursor-pointer group"
+               class="aspect-square bg-[url('./images/work-5.png')] bg-no-repeat bg-cover bg-current rounded-lg relative cursor-pointer group"
             >
                <div
                   class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
                >
                   <div>
-                     <h2 class="font-semibold">Crypto Tracker</h2>
-                     <p class="font-sm text-gray-700">React & CoinGecko</p>
+                     <h2 class="font-semibold">Blog Website</h2>
+                     <p class="font-sm text-gray-700">Mern FullStack</p>
                   </div>
                   <div
                      class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
@@ -620,8 +677,12 @@
                   </div>
                </div>
             </a>
+         </div>
 
-            <!-- project 3 -->
+         <!-- ----------------secound section------------------ -->
+
+         <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
+            <!-- project 5 -->
 
             <a
                href="https://removebg-mu.vercel.app"
@@ -644,7 +705,53 @@
                </div>
             </a>
 
-            <!-- project 4 -->
+            <!-- project 6 -->
+
+            <a
+               href="https://crypto-universe-six.vercel.app"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="aspect-square bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-current rounded-lg relative cursor-pointer group"
+            >
+               <div
+                  class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
+               >
+                  <div>
+                     <h2 class="font-semibold">Crypto Tracker</h2>
+                     <p class="font-sm text-gray-700">React & CoinGecko</p>
+                  </div>
+                  <div
+                     class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+                  >
+                     <img class="w-5" src="./images/send-icon.png" alt="" />
+                  </div>
+               </div>
+            </a>
+
+            <!-- project 7 -->
+
+            <a
+               href="https://pdf-editor-ebon.vercel.app"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="aspect-square bg-[url('./images/work-8.png')] bg-no-repeat bg-cover bg-current rounded-lg relative cursor-pointer group"
+            >
+               <div
+                  class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
+               >
+                  <div>
+                     <h2 class="font-semibold">PDF Tools Website</h2>
+                     <p class="font-sm text-gray-700">React & Pdf-Lib</p>
+                  </div>
+                  <div
+                     class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+                  >
+                     <img class="w-5" src="./images/send-icon.png" alt="" />
+                  </div>
+               </div>
+            </a>
+
+            <!-- project 8 -->
 
             <a
                href="https://elitedeals.vercel.app"
@@ -667,21 +774,6 @@
                </div>
             </a>
          </div>
-         <a
-            href="#"
-            class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-[#2a004a]"
-            >Show more
-            <img
-               class="w-4 dark:hidden"
-               src="./images/right-arrow-bold.png"
-               alt=""
-            />
-            <img
-               class="w-4 hidden dark:block"
-               src="./images/right-arrow-bold-dark.png"
-               alt=""
-            />
-         </a>
       </div>
 
       <!-- ----------------------------Contact section---------------------------- -->
@@ -752,19 +844,22 @@
                src="./images/logo_dark(juman).png"
                alt=""
             />
-            <div class="w-max flex items-center gap-2 mx-auto">
-               <img
-                  class="w-6 dark:hidden"
-                  src="./images/mail-top.png"
-                  alt=""
-               />
-               <img
-                  class="w-6 hidden dark:block"
-                  src="./images/mail-top-dark.png"
-                  alt=""
-               />
-               jumansaikia10@gmail.com
-            </div>
+            <a href="mailto:jumansaikia10@gmail.com">
+               <div class="w-max flex items-center gap-2 mx-auto">
+                  <img
+                     class="w-6 dark:hidden"
+                     src="./images/mail-top.png"
+                     alt=""
+                  />
+
+                  <img
+                     class="w-6 hidden dark:block"
+                     src="./images/mail-top-dark.png"
+                     alt=""
+                  />
+                  jumansaikia10@gmail.com
+               </div>
+            </a>
          </div>
          <div
             class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] my-12 py-6"
