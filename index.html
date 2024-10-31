@@ -257,7 +257,7 @@
             <a
                class="px-10 py-3 border rounded-full border-gray-500 bg-white flex items-center gap-2 hover:bg-gray-200 hover:text-black transition duration-500 dark:text-black"
                href="./images/Resume(Jumansaikia).pdf"
-               download
+               onClick="downloadAndOpen(event)"
                >My resume
                <img class="w-4" src="./images/download-icon.png" alt=""
             /></a>
@@ -947,6 +947,24 @@
             loop: true,
             smartBackspace: true, // this will only backspace what doesn't match the previous string
          });
+      </script>
+
+      <script>
+         function downloadAndOpen(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            const pdfUrl = "./images/Resume(Jumansaikia).pdf";
+
+            // Open the PDF in a new tab
+            window.open(pdfUrl, "_blank");
+
+            // Create a temporary link to download the PDF
+            const link = document.createElement("a");
+            link.href = pdfUrl;
+            link.download = "Resume(Jumansaikia).pdf"; // Set the name for the downloaded file
+            document.body.appendChild(link);
+            link.click(); // Trigger the download
+            document.body.removeChild(link); // Clean up
+         }
       </script>
 
       <script>
